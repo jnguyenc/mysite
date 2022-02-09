@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #dae1ec;
+    min-width: 510px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.navbar .container {
+    background-color: rgb(25, 105, 17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+.nav {
+    display: flex;
+    list-style: none;
+}
+.nav li {
+    margin-left: 10px;
+}
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.header .container {
+    background-color: #76b666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header {
+    color: white;
+
+    min-height: 570px;
+
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header p {
+    margin: 30px 0;
+}
+
+.header img {
+    max-width: 480px;
+    border-radius: 10px;
+}
+
+.box {
+    background: #c9cecb;
+    color: rgb(22, 82, 54);
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    max-width: 480px;
+}
+
+.box i {
+    margin-right: 10px;
+}
+.box ul {
+    margin-left: 20px;
+}
+
+@media (min-width: 800px) {
+    .boxes .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-grow: 1;
+    }
+    .boxes .box {
+        min-width: 370px;
+        flex-grow: 1;
+        max-width: 1200px;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .header {
+        min-height: 200px;
+    }
+    .header div {
+        flex-grow: 4;
+    }
+
+    .header img {
+        max-width: 375px;
+    }
+}
+@media (min-width: 1200px) {
+    .boxes .box {
+        min-width: 330px;
+        flex-grow: 1;
+        max-width: 1200px;
+    }
+}
